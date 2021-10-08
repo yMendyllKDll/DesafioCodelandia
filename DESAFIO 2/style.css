@@ -1,0 +1,138 @@
+*{
+    margin: 0%;
+}
+
+.container1{
+    text-align: center;
+    background-color: black;
+    color: white;   
+    padding: 10px;
+}
+
+.container2{
+    text-align: center;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),  url('img/wallpaper.jpeg');  
+    max-height: 500px;
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:#f6f6f6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+.header-block {
+    padding-top: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.header-block p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px; 
+    line-height: 196.19%;
+    text-align: left;
+    color: white;
+}
+
+.header-block h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 28px; 
+    line-height: 39px;
+    text-align: left;
+}
+
+.subtitle p {
+    line-height: 30px;
+    width: 400px;
+    padding: 0px;
+}
+
+.content, .header-block{
+
+    text-align: center;
+    justify-content: center;
+}
+
+.content-header {
+    padding-top: 80px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 60px;
+}
+
+.content-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px; 
+    line-height: 196.19%;
+    color: #181818;
+    padding-top: 5px;
+
+}
+
+.content-header p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 196.19%;
+    color:#181818;
+}
+
+.cards {
+     margin-left:-90px; 
+     margin-right: 0px;
+}
+
+.cards img:hover{
+    transform: scale(1.5);
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.block article {
+    background-color: #f6f6f6;
+    max-width: 250px;
+    max-height: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgb(5, 5, 5);
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    color: white;   
+  }
+
+  .block article {
+    min-width: 250px;
+    min-height: 150px;
+    max-width: 302px;
+    max-height: 300px;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    margin-bottom: 39px;
+}

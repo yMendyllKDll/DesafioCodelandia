@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;   
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: url('wall.jpg') no-repeat center center;
+    font-family: 'Share Tech Mono', serif;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+}
+#bd{
+    border:1px solid aqua;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:13px;
+    padding:6px 10px;
+    text-decoration:none;
+    margin: 10px 10px;
+}
+
+ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a:hover {
+	transform: scale(1.2);
+	background:  #e5b179;
+	color: black;
+}

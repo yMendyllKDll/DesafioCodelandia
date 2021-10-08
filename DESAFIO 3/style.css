@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    width: 100%;
+    min-height: 50vh;
+    background: #d7d4ff;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 18%;
+  }
+  
+  .titulo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 28%;
+  }
+  
+  .titulo h1 {
+    padding-top: 25%;
+    font-family: Merriweather, sans-serif;
+    font-weight: 400;
+    color: #2b2b2b;
+  }
+  
+  .titulo p {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    color: #555555;
+    padding-bottom: 40px;
+  }
+  
+  .header-img {
+    width: 40%;
+    padding-top: 40px;
+  }
+  
+  a button {
+    cursor:no-drop ;
+  }
+  
+  button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    color: #d7d4ff;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  .container-footer {
+    width: 100%;
+    min-height: 75vh;
+    background: #d7d4ff;
+  }
+  
+  .container-footer h1 {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-family: Merriweather, sans-serif;
+    font-weight: 400;
+    color: #2b2b2b;
+  }
+  
+  .form-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .form {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    outline: none;
+  }
+
+  .footer-container {
+    margin: 0 auto;
+    width: 100%;
+    color: rgb(8, 8, 8);
+    background: linear-gradient(to right, #574ae8, #3ea1db);
+    padding: 40px;
+    position: relative;
+    text-align: center;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    outline: none;
+    overflow: auto;
+    border: none;
+    border-radius: 5px;
+    height: 100px;
+    padding: 20px 15px;
+  }
+
+  .btn {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
