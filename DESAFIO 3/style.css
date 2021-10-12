@@ -6,7 +6,7 @@
 
   header {
     width: 100%;
-    min-height: 50vh;
+    min-height: 60vh;
     background: #d7d4ff;
   }
 
@@ -50,6 +50,7 @@
   
   a button {
     cursor:no-drop ;
+    border: none;
   }
   
   button {
@@ -62,23 +63,42 @@
     color: #d7d4ff;
   }
 
-
-
-
-
-
-
-
-
-
+  .container{
+    max-width: 960px;
+    margin: 0 auto;
+  }
   
+  .section-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card{
+    width: 280px;
+    margin: 0 20px;
+  }
+  
+  .color-card {
+    width: 300px;
+    min-height: 210px;
+    margin-top: 60px;
+  }
 
+  .card_titulo{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0 5px 0;
+  }
 
-
+  .card_descricao{
+    text-align: center;
+    margin: 10px 0 20px 0;
+  }
 
   .container-footer {
     width: 100%;
-    min-height: 75vh;
+    min-height: 90vh;
     background: #d7d4ff;
   }
   
@@ -112,17 +132,7 @@
     border-radius: 5px;
     font-family: Lato, sans-serif;
     font-weight: 400;
-    outline: none;
-  }
-
-  .footer-container {
-    margin: 0 auto;
-    width: 100%;
-    color: rgb(8, 8, 8);
-    background: linear-gradient(to right, #574ae8, #3ea1db);
-    padding: 40px;
-    position: relative;
-    text-align: center;
+    border: none;
   }
 
   textarea {
@@ -141,4 +151,114 @@
     width: 100%;
     font-size: 1.2em;
     font-weight: 700;
+  }
+
+  .footer-container {
+    margin: 0 auto;
+    width: 100%;
+    color: rgb(8, 8, 8);
+    background: linear-gradient(to right, #574ae8, #3ea1db);
+    padding: 40px;
+    position: relative;
+    text-align: center;
+  }
+
+
+  @media screen and (max-width: 375px) {
+    .header-container {
+      min-height: 100vh;
+      padding: 0 5%;
+    }
+  
+    .titulo {
+      width: 100%;
+    }
+  
+    .titulo h1 {
+      font-size: 2.1em;
+    }
+
+    .titulo button {
+      width: 100%;
+    }
+  
+    .titulo p {
+      font-size: 1.2em;
+    }
+  
+    .header-img {
+      width: 100%;
+      min-height: 50%;
+    }
+  
+    .form-container {
+      width: 90%;
+      padding-bottom: 40px;
+    }
+  }
+  
+  @media screen and (min-width: 376px) and (max-width: 768px) {
+    .header-container {
+      min-height: 100vh;
+      padding: 0 5%;
+    }
+  
+    .titulo {
+      width: 100%;
+    }
+  
+    .titulo h1 {
+      font-size: 2.3em;
+      padding-bottom: 15px;
+    }
+  
+    .titulo p {
+      font-size: 1em;
+    }
+  
+    .header-img {
+      width: 100%;
+      min-height: 50%;
+    }
+  
+    .container-footer {
+      min-height: 70vh;
+    }
+  
+    .form-container {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-container {
+      min-height: 50vh;
+      padding: 0 5%;
+    }
+  
+    .titulo {
+      width: 100%;
+    }
+  
+    .titulo h1 {
+      padding-top: 10%;
+      font-size: 2.3em;
+    }
+  
+    .titulo p {
+      font-size: 2em;
+    }
+  
+    .header-img {
+      width: 90%;
+      padding-bottom: 40px;
+    }
+  
+    .container-footer {
+      min-height: 50vh;
+    }
+  
+    .form-container {
+      width: 90%;
+    }
   }
