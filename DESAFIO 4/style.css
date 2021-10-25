@@ -1,9 +1,238 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+:root {
+  --green: #04c35c;
+  --blue: #2b6cb0;
 
-  .container{
-    
+  --white: #ffffff;
+  --white300: #f7fafc;
+
+  --dark: #1a202c;
+  --input: #e8e8e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input {
+  border: 0;
+}
+
+button:focus,
+input:focus {
+  border: 0;
+}
+
+.image {
+  background: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.login {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* align-self: center; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login p {
+  font-family: 'Merriweather Regular';
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--dark);
+  margin-bottom: 7px;
+  width: 50%;
+}
+
+.login h2 {
+  font-family: 'Merriweather Regular';
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  color: var(--dark);
+  font-weight: 700;
+  margin-bottom: 28px;
+  width: 50%;
+}
+
+.login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login__form label {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: 'Lato Regular';
+  color: #1A202C;
+  padding: 11px 0;
+}
+
+.login__form #email, .login__form #password {
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  width: 350px;
+  padding: 16px;
+}
+
+.login__form button {
+  background: #04C45C;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Lato Regular';
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 15px 0;
+  cursor: pointer ;
+}
+
+.login__form a.google {
+  margin-top: 15px;
+  background: #1a202c;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: 'Lato Regular';
+  font-weight: 700;
+  padding: 15px 0;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+}
+
+.login__remember {
+  padding: 26px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login__remember #check {
+  position: relative;
+  cursor: pointer ;
+}
+
+.login__remember #check::after {
+  content: 'Lembre de mim';
+  white-space: nowrap;
+  position: absolute;
+  left: 20px;
+  cursor: pointer ;
+}
+
+.login__remember a {
+  text-decoration: none;
+  font-family: 'Lato Regular';
+  font-size: 1.4rem;
+  color: #2B6CB0;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 100%;
+  color: rgb(8, 8, 8);
+  padding: 40px;
+  position: relative;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .container {
+    padding: 0 80px;
   }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+  .container {
+    padding: 0 32px;
+    margin-top: 50px;
+  }
+  .image {
+    display: none;
+  }
+  .login {
+    width: 100%;
+  }
+  .login p {
+    width: 100%;
+  }
+  .login h2 {
+    width: 100%;
+  }
+  .login__form #email, .login__form #password {
+    width: calc(100vw - 65px);
+  }
+}
